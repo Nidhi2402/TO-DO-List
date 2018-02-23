@@ -1,1 +1,11 @@
-theme: jekyll-theme-midnight
+runtime: nodejs
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: website/index.html
+  upload: website/index.html
+
+- url: /
+  static_dir: website
